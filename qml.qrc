@@ -6,5 +6,27 @@
         <file>qtquickcontrols2.conf</file>
         <file>Clock.qml</file>
         <file>ClockScreen.qml</file>
+        <file>images/lippu.jpg</file>
+        <file>images/lippu.png</file>
+        <file>main.cpp</file>
+        <file>images/tahti.png</file>
+        <file>images/iso_viisari.png</file>
+        <file>images/sakkikello.png</file>
+        <file>images/shakkikello.png</file>
+        <file>ClockFace.qml</file>
+        <file>images/clock_face1.png</file>
+        <file>images/clock_face2.png</file>
+        <file>DigitalClockFace.qml</file>
+        <file>images/paranneltu_uusi_koivutausta.png</file>
+        <file>images/glossy-green-button.png</file>
+        <file>StartButton.qml</file>
+        <file>images/kaynnistysnappulat2.png</file>
+        <file>images/kaynnistysnappulat.png</file>
+        <file>images/stop_nappula_pun.png</file>
+        <file>ClockWhole.qml</file>
+        <file>StopButton.qml</file>
+        <file>images/kaynnistysvalo_vihr.png</file>
+        <file>images/uusin_taustapaneeli.jpg</file>
+        <file>images/kaynnistysvalo_pun.png</file>
     </qresource>
 </RCC>

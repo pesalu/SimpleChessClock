@@ -4,12 +4,22 @@ Item {
 //    id: /*clock1*/
     property alias timer: timer1
 
-    property bool stopped: false
+    signal timeChanged()
+    signal clockStateChanged()
+
+    property bool lastStopped: true
     property int hours
     property int minutes
     property int seconds
     property int centiseconds
     property double time_in_seconds: hours*3600 + minutes*60 + seconds
+
+    function setTime(hours, minutes, seconds){
+        hours = hours
+        minutes = minutes
+        seconds = seconds
+        time_in_seconds = hours*3600 + minutes*60 + seconds
+    }
 
     Timer {
         id: timer1
@@ -23,6 +33,7 @@ Item {
                 parent.seconds = (parent.time_in_seconds % 3600) % 60
                 parent.minutes = (parent.time_in_seconds % 3600) / 60
                 parent.hours = (parent.time_in_seconds - parent.minutes*60 - parent.seconds) / 3600
+                timeChanged()
             }
         }
     }
